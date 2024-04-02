@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="imgs/it.png">
+
+    <source src="imgs/bg.mp4" type="video/mp4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information and Technology</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #logo {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            right: 0px; /* Adjust as needed */
+            z-index: 1001;
+        }
+
+        #logo1 {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            left: 0px; /* Adjust as needed */
+            z-index: 1001;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+        #video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+        }
+        #content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        #overlay-video {
+            position: relative;
+            top: 130px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 250px;
+            height: 250px;
+        }
+        .text-boxes {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 20px;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+        }
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5px;
+            top: 450px;
+
+            border-radius: 5px;
+        }
+        .bottom-text1 {
+            position: absolute;
+            bottom: auto;
+            left: 20%;
+            transform: translateX(-50%);
+            color: white;
+        }
+        .bottom-text {
+            position: absolute;
+            bottom: auto;
+            right: 10%;
+            transform: translateX(-50%);
+            color: rgb(241, 241, 241);
+        }
+
+        /* Added styles for the register button */
+        .register-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-btn-container {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+
+        @media (max-width: 768px) {
+            .text-boxes {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="logo1">
+    <img src="C:\Users\91739\Desktop\surenth\imgs\logo1.png" alt="Logo" width="220" height="150" align="left">
+</div>
+<div id="logo">
+    <img src="C:\Users\91739\Desktop\surenth\imgs\it.png" alt="Logo" width="200" height="150" align="right">
+</div>
+<div id="video-background">
+    <video autoplay muted loop>
+        <source src="imgs/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div id="content">
+    <h3>DEPARTMENT OF </h3>
+    <p><h3>INFORMATION AND TECHNOLOGY </h3></p>
+    <link rel="icon" href="imgs/ai.png">    <div id="overlay-video">
+        <video autoplay muted width="300" height="250">
+            <source src="imgs/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="text-boxes">
+        <div class="text-box">
+            <h2>Exogesis ( Paper Point )</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>Professional Trivia ( Quiz )</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>Touch Typing and Coding</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>Vision Pro (Photography)</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>PES Football</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+    </div>
+</div>
+<div class="bottom-text1">
+    <p><h4><U>STUDENT'S CO-ORDINATOR</U></h4><p>V.Abishek - 9384266462
+    </p><p>M.Salomia - 8610573002
+    </p><p>EMAIL ID;</p>
+</div>
+<div class="bottom-text">
+    <p><h4>EXITING CASH PRIZES</h4><p><h4>
+        FOR WINNERS</h4></p><p>REGISTRATION FEES</p><p>₹200/- per head.</p>
+</div>
+
+<!-- Register Button -->
+<div  class="register-btn-container">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSJHRvnx3xxcgWRlwxBfnWN-WUcSNu4yGY04fEfUtSYyPuwg/viewform?vc=0&c=0&w=1&flr=0&pli=1" class="register-button">Register_Now </a>
+
+</div>
+</body>
+</html>

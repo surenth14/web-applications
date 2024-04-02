@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Video Example</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;
+    }
+    #video-content {
+        position: relative;
+        z-index: 1000;
+        color: #fff;
+        text-align: center;
+        padding: 250px;
+    }
+    #logo {
+        position: absolute;
+        top: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        z-index: 1001; /* Ensure logo appears above the video */
+    }
+    .card {
+        width: 214px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px;
+        background-image: url(imgs/logo.png);
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    #buttons-container {
+        position: absolute;
+        top: 25px; /* Adjust as needed */
+        right: 25px; /* Adjust as needed */
+        z-index: 1001; /* Ensure buttons appear above the video */
+    }
+    .button {
+        display: inline-block;
+        background-color: #4cd8ed;
+        opacity: 0.5;
+        color: #ffffff;
+        padding: 20px 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        margin-left: 10px;
+        border-radius: 15px;
+    }
+    #bottom-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        z-index: 1001;
+    }
+    .logo {
+        width: 50px;
+        height: auto;
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .logo:hover {
+        transform: scale(1.1);
+    }
+</style>
+</head>
+<body>
+    <div id="logo">
+        <img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo" width="250" height="150" align="left">
+    </div>
+<video autoplay muted loop id="video-background">
+  <source src="C:\Users\DD\Desktop\surenth\imgs\bg.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div id="video-content">
+  <h1>Your Content Here</h1>
+  <p>This is the content that will appear over the video.</p>
+</div>
+<div id="buttons-container">
+    <a href="#block1" class="button">Button</a>
+    <a href="#block2" class="button">Button 2</a>
+    <!-- Add more buttons as needed -->
+</div>
+
+<div id="bottom-logos">
+    <a href="link1.html"><img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo 2" class="logo"></a>
+    <a href="link2.html"><img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo 3" class="logo"></a>
+    <a href="link3.html"><img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo 4" class="logo"></a>
+    <a href="link4.html"><img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo 5" class="logo"></a>
+    <a href="link5.html"><img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo 6" class="logo"></a>
+    <a href="link6.html"><img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo 7" class="logo"></a>
+</div>
+</body>
+</html>

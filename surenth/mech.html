@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="imgs/mech.png">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mechanical  Engineering</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    #logo {
+        position: absolute;
+        top: 10px; /* Adjust as needed */
+        right: 40px; /* Adjust as needed */
+        z-index: 1001;
+    }
+    
+    #logo1 {
+        position: absolute;
+        top: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        z-index: 1001;
+    }
+    #video-background {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    #video-background video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+    }
+    #content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+    #overlay-video {
+        position: relative;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 250px;
+        height: 250px;
+    }
+    .text-boxes {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 20px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+    .text-box {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 5px;
+        top: 450px;
+    
+        border-radius: 5px;
+    }
+    .bottom-text1 {
+        position: absolute;
+        bottom: auto;
+        left: 20%;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .bottom-text {
+        position: absolute;
+        bottom: auto;
+        right: 10%;
+        transform: translateX(-50%);
+        color: rgb(241, 241, 241);
+    }
+    .register-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 90px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .text-boxes {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="logo">
+    <img src="C:\Users\91739\Desktop\surenth\imgs\logo1.png" alt="Logo" width="250" height="150" align="left">
+</div>
+<div class="logo1">
+    <img src="C:\Users\91739\Desktop\surenth\imgs\mech.png" alt="Logo" width="180" height="180" align="right">
+</div>
+<div id="video-background">
+    <video autoplay muted loop>
+        <source src="imgs/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div id="content">
+    <h3>DEPARTMENT OF </h3>
+    <p><h3>Mechanical Engineering </h3></p>
+    
+     <div id="overlay-video">
+        <video autoplay muted width="300" height="250">
+            <source src="imgs/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="text-boxes">
+        <div class="text-box">
+            <h2>Paper presentation</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>Project Expo</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>Quizzer Buzzer</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>Commedy Hunt</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+        <div class="text-box">
+            <h2>Draw your Dreams</h2>
+            <p>*Maximum 2 Members per team</p>
+        </div>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOK2A5RxP2JcVJkceo6ypS7bMgmZQqC6TQPIidrp5xOHMqjA/viewform" class="register-button">Register Now</a>
+</div>
+<div class="bottom-text1">
+    <p><h4><U>STUDENT'S CO-ORDINATOR</U></h4><p>S.Pravinraj - 7092833405
+    </p><p>K.Manikandan - 9944799153</p><p>EMAIL ID: mohan.it@ppg.edu.in</p>
+</div>
+<div class="bottom-text">
+    <p><h4>EXITING CASH PRIZES</h4><p><h4>
+        FOR WINNERS</h4></p><p>REGISTRATION FEES</p><p>₹200/- per head.</p>
+</div>
+</body>
+</html>

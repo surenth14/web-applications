@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InnoverseS</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;
+    }
+    #video-content1 {
+        position: absolute;
+        z-index: 1000;
+        color: #fff;
+        top: auto;
+    align-items: center;
+    left: 24%;
+    }
+    #video-content {
+        position: absolute;
+        z-index: 1000;
+        color: #fff;
+        top: 250px;
+    align-items: center;
+    left: 24%;
+    }
+    #logo {
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        z-index: 1001; /* Ensure logo appears above the video */
+    }
+   
+    #buttons-container {
+        position: fixed;
+        top: 25px; /* Adjust as needed */
+        right: 25px; /* Adjust as needed */
+        z-index: 1001; /* Ensure buttons appear above the video */
+    }
+    .button {
+        display: inline-block;
+        background-color: #4cd8ed;
+        opacity: 0.5;
+        color: #ffffff;
+        padding: 20px 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        margin-left: 10px;
+        border-radius: 15px;
+        transition: transform 0.5s;
+    }
+    .button:hover{
+        transform: translateY(-10px);
+    }
+    .logo-container {
+        position: fixed;
+        bottom: 25px; /* Adjust as needed */
+        left: 45%;
+        transform: translateX(-50%);
+    }
+    .logo-container1 {
+        position: fixed;
+        bottom: 2px; /* Adjust as needed */
+        left: 790px;
+        transform: translateX(-50%);
+    }
+    .logo {
+        display: fixed;
+        margin: 0 10px; /* Adjust as needed */
+        width: 100px; /* Adjust width as needed */
+        height: auto;
+    }
+    .lo {
+        position: fixed;
+        top: 20px;
+        left: auto;
+
+    }
+</style>
+</head>
+<body>
+    <div class="lo" >
+        <img src="C:\Users\91739\Desktop\surenth\imgs\logo1.png" alt="Logo" width="200" height="150" align="left">
+    </div>
+<video autoplay muted loop id="video-background">
+  <source src="C:\Users\91739\Desktop\surenth\imgs\bg.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<div id="video-content1">
+    <img src ="C:\Users\91739\Desktop\surenth\imgs\font.png" width="750px" height="350>">
+    </div>
+<div id="video-content">
+<img src ="C:\Users\91739\Desktop\surenth\imgs\poster.png" width="710px" height="300>">
+</div>
+<div id="buttons-container">
+    <a href="https://linktr.ee/pravaah2k24" class="button">REGISTER NOW</a>
+    <!-- Add more buttons as needed -->
+</div>
+
+<!-- Logos with hyperlinks -->
+<div class="logo-container">
+    <a href="file:///C:/Users/91739/Desktop/surenth/agri.html"><img src="C:\Users\91739\Desktop\surenth\imgs\agri.png" alt="Logo 1" class="logo"></a>
+    <a href="file:///C:/Users/91739/Desktop/surenth/ai.html"><img src="C:\Users\91739\Desktop\surenth\imgs\ai.png" alt="Logo 2" class="logo" ></a>
+    <a href="file:///C:/Users/91739/Desktop/surenth/BME.html"><img src="C:\Users\91739\Desktop\surenth\imgs\bme.png" alt="Logo 3" class="logo"></a>
+    <a href="file:///C:/Users/91739/Desktop/surenth/cse.html"><img src="C:\Users\91739\Desktop\surenth\imgs\cse.png" alt="Logo 4" class="logo"></a>
+    <a href="file:///C:/Users/91739/Desktop/surenth/ece.html"><img src="C:\Users\91739\Desktop\surenth\imgs\ece.png" alt="Logo 5" class="logo"></a>
+    <a href="file:///C:/Users/91739/Desktop/surenth/IT.html"><img src="C:\Users\91739\Desktop\surenth\imgs\it.png" alt="Logo 6" class="logo"></a>
+    <div class="logo-container1">
+    <a href="file:///C:/Users/91739/Desktop/surenth/mech.html"><img src="C:\Users\91739\Desktop\surenth\imgs\mech.png" alt="Logo 7" class="logo"></a>
+</div>
+
+</body>
+</html>

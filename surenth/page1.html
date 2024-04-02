@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Background Example</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    #logo {
+        position: absolute;
+        top: 10px; /* Adjust as needed */
+        right: 0px; /* Adjust as needed */
+        z-index: 1001;
+    }
+    
+    #logo1 {
+        position: absolute;
+        top: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        z-index: 1001;
+    }
+    #video-background {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    #video-background video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+    }
+    #content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+    #overlay-video {
+        position: relative;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 250px;
+        height: 250px;
+    }
+    .text-boxes {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 20px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+    .text-box {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        top: 600px;
+    
+        border-radius: 5px;
+    }
+    .bottom-text1 {
+        position: absolute;
+        bottom: auto;
+        left: 20%;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .bottom-text {
+        position: absolute;
+        bottom: auto;
+        right: 10%;
+        transform: translateX(-50%);
+        color: rgb(241, 241, 241);
+    }
+    @media (max-width: 768px) {
+        .text-boxes {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+<div id="logo">
+    <img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo" width="250" height="150" align="left">
+</div>
+<div id="logo1">
+    <img src="C:\Users\DD\Desktop\surenth\imgs\logo1.png" alt="Logo" width="250" height="150" align="left">
+</div>
+<div id="video-background">
+    <video autoplay muted loop>
+        <source src="imgs/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div id="content">
+    <h3>DEPARTMENT OF </h3>
+    <p><h3>ARTIFICIAL INTELLIGENCE AND DATA SCIENCE</h3></p>
+    <p><h3>&</h3></p>
+    <p><h3>ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</h3></p>
+    <div id="overlay-video">
+        <video autoplay muted width="300" height="250">
+            <source src="imgs/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="text-boxes">
+        <div class="text-box">
+            <h2>Text Box 1</h2>
+            <p>Some content goes here.</p>
+        </div>
+        <div class="text-box">
+            <h2>Text Box 2</h2>
+            <p>Some content goes here.</p>
+        </div>
+        <div class="text-box">
+            <h2>Text Box 3</h2>
+            <p>Some content goes here.</p>
+        </div>
+        <div class="text-box">
+            <h2>Text Box 4</h2>
+            <p>Some content goes here.</p>
+        </div>
+        <div class="text-box">
+            <h2>Text Box 5</h2>
+            <p>Some content goes here.</p>
+        </div>
+    </div>
+</div>
+<div class="bottom-text1">
+    <p><h4><U>STUDENT'S CO-ORDINATOR</U></h4><p>Narayana Surenth. J  - +91 948710286</p><p>Keerthika. S         - +91 948710286</p><p>Email ID: aispartanz.ppg.it@gmail.com</p>
+</div>
+<div class="bottom-text">
+    <p><h4>EXITING CASH PRIZES</h4><p><h4>
+        FOR WINNERS</h4></p><p>REGISTRATION FEES</p><p>₹200/- per head.</p>
+</div>
+</body>
+</html>
